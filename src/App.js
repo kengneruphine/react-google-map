@@ -11,7 +11,7 @@ import Geocode from "react-geocode";
 import { Descriptions } from 'antd';
 import AutoComplete from 'react-google-autocomplete'
 
-Geocode.setApiKey("AIzaSyCVQ7s7lymAPgLWLgK7fG6VcOPpmGLiI3g")
+Geocode.setApiKey(YOUR_API_KEY)
 
 class App extends React.Component {
   state = {
@@ -228,7 +228,7 @@ class App extends React.Component {
         </Descriptions>
         <p>Select a new location by dragging the marker</p>
         <AsyncMap
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVQ7s7lymAPgLWLgK7fG6VcOPpmGLiI3g&v=3.exp&libraries=geometry,drawing,places"
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key='YOUR_API_KEY'&v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `400px` }} />}
           mapElement={<div style={{ height: `100%` }} />}
